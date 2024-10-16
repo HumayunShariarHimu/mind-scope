@@ -1,0 +1,67 @@
+body{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  user-select: none;
+}
+.telescope{
+  width: 95vmin;
+  height: 95vmin;
+  border-radius: 50vmin;
+  background-image: url("./nature.jpg");
+  background-repeat: no-repeat;
+  background-size: 180%;
+  background-position: 0% 0%;
+}
+.zoom{
+  display: flex;
+  flex-direction: column;
+
+
+}
+.zoom div{
+  height: 5em;
+  border: 1px solid white;
+  line-height: 5em;
+  cursor: pointer;
+}
+.direction{
+  display: grid;
+  grid-template-columns: 3em 3em 3em;
+  grid-template-rows: 3em 3em 3em;
+
+}
+.up{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.left{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.right{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.down{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.direction div{
+  border: 1px solid white;
+  line-height: 3em;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+}

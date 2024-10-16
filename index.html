@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MindScope</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./mind_scope_style.css">
+<style>
+  *,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {  
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    /* height: 30vh; */
+    display: grid;
+    /* place-items: center; */
+    font-family: "Montserrat", sans-serif;
+  }
+  .hidden {
+    display: none !important;
+  }
+  main {
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="zoom">
+  <div class="zoomin">Zoom-in</div>
+  <div class="zoomout">Zoom-out</div>
+</div>
+<div class="telescope"></div>
+<div class="direction">
+  <div class="up">Up</div>
+  <div class="left">Left</div>
+  <div class="right">Right</div>
+  <div class="down">Down</div>
+</div>
+<!-- partial -->
+<script src='./mind_scope_script_two.js'></script><script  src="./mind_scope_script_one.js"></script>            
+</body>
+</html>
